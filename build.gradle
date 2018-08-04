@@ -1,0 +1,27 @@
+group 'com.education'
+version '1.0-SNAPSHOT'
+
+
+buildscript {
+    ext {
+        springBootVersion = '2.0.3.RELEASE'
+    }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+
+subprojects {
+
+    apply plugin: 'idea'
+    apply plugin: 'java'
+
+    repositories {
+        jcenter()
+    }
+
+}

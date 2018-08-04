@@ -1,0 +1,6 @@
+rootProject.name = 'LearnByPractice'
+
+
+include (':spring-core')
+include('application-code')
+
