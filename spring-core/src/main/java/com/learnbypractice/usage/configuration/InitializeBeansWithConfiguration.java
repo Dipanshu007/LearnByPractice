@@ -1,7 +1,7 @@
 package com.learnbypractice.usage.configuration;
 
-import com.learnbypractice.service.DepartmentService;
-import com.learnbypractice.service.EmployeeService;
+import com.learnbypractice.app.simple.service.DepartmentService;
+import com.learnbypractice.app.simple.service.EmployeeService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -25,7 +25,7 @@ public class InitializeBeansWithConfiguration {
 
     /**
      *
-     * method create new bean
+     * method to create new bean
      *
      */
     @Bean
@@ -36,7 +36,7 @@ public class InitializeBeansWithConfiguration {
 
     /**
      *
-     * Method to create new object but it will not create new bean.
+     * Method to create new object but it will not create any spring bean.
      */
     public DepartmentService departmentService() {
         return new DepartmentService();

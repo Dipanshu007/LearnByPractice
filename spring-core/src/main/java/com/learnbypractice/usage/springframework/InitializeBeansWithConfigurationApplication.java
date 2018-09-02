@@ -1,8 +1,7 @@
 package com.learnbypractice.usage.springframework;
 
-import com.learnbypractice.service.EmployeeService;
+import com.learnbypractice.app.simple.service.EmployeeService;
 import com.learnbypractice.usage.configuration.InitializeBeansWithConfiguration;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.util.Assert;
 
